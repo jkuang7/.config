@@ -124,6 +124,16 @@ hyper - 2 : yabai -m display --focus 2
 #cmd + shift - j  : yabai -m window --display 1; yabai -m display --focus 1
 #cmd + shift - k : yabai -m window --display 2; yabai -m display --focus 2
 
+# Create space on the active display
+hyper - c : yabai -m space --create
+
+# Delete focused space and focus first space on display
+hyper - d : yabai -m space --destroy
+
+# fast focus desktop
+cmd + alt - x : yabai -m space --focus recent
+cmd + alt - 1 : yabai -m space --focus 1
+
 ## rotate tree 90
 hyper - r : yabai -m space --rotate 90
 
@@ -139,15 +149,8 @@ hyper - f : yabai -m window --toggle float; yabai -m window --grid 4:3:1:1:0:0; 
 # create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
 # shift + cmd - n : yabai -m space --create && \ index="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')" && \ yabai -m window --space "${index}" && \ yabai -m space --focus "${index}"
 
-# make floating window fill screen
-#shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
-
 # make floating window fill left-half of screen
 # shift + alt - left   : yabai -m window --grid 1:2:0:0:1:1
-
-# fast focus desktop
-# cmd + alt - x : yabai -m space --focus recent
-# cmd + alt - 1 : yabai -m space --focus 1
 
 # send window to desktop and follow focus
 # shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
