@@ -76,6 +76,10 @@
 # A REFERENCE ONLY, WHEN MAKING YOUR OWN CONFIGURATION..          #
 # ############################################################### #
 
+# open terminal
+hyper - return : open -a Terminal --new
+hyper - t : killall Terminal
+
 # toggle window split type
 hyper - e : yabai -m window --toggle split
 
@@ -125,14 +129,17 @@ hyper - 2 : yabai -m display --focus 2
 #cmd + shift - k : yabai -m window --display 2; yabai -m display --focus 2
 
 # Create space on the active display
-hyper - c : yabai -m space --create
+#cmd + shift - p : yabai -m space --create
 
 # Delete focused space and focus first space on display
-hyper - d : yabai -m space --destroy
+#hyper - d : yabai -m space --destroy
 
 # fast focus desktop
-cmd + alt - x : yabai -m space --focus recent
-cmd + alt - 1 : yabai -m space --focus 1
+#cmd + alt - x : yabai -m space --focus recent
+#cmd + alt - 1 : yabai -m space --focus 1
+
+#move window to previous space -> Requires SIP
+cmd + shift - p : yabai -m window --space prev
 
 ## rotate tree 90
 hyper - r : yabai -m space --rotate 90
