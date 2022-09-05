@@ -56,9 +56,10 @@ yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Alfred Preferences$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Disk Utility$" sticky=on layer=above manage=off
 yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
+yabai -m rule --add app="^League of Legends$" sticky=on layer=above manage=off
 #yabai -m rule --add app="^Terminal$" sticky=on layer=above manage=off
 yabai -m rule --add app="^iTerm2$" sticky=on layer=above manage=off
-yabai -m rule --add app="^TickTick$" sticky=on layer=above manage=off
+#yabai -m rule --add app="^TickTick$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Rectangle$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Path Finder$" manage=off
