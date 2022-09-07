@@ -49,6 +49,11 @@ set shortmess+=c
 let mapleader=" "
 
 " --- Plugins
+
+" Packer
+lua require('hello')
+lua require('plugins')
+
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'sainnhe/gruvbox-material'
