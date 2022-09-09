@@ -61,6 +61,7 @@ yabai -m rule --add app="^Zoom Meeting$" sticky=on layer=above manage=off
 yabai -m rule --add app="^zoom.us$" sticky=on layer=above manage=off
 yabai -m rule --add app="^1Password7$" sticky=on layer=above manage=off
 yabai -m rule --add app="^IntelliJ IDEA$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Code$" sticky=on layer=above manage=off
 yabai -m rule --add app="^SDM$" sticky=on layer=above manage=off
 yabai -m rule --add app="^OpenVPN Connect$" sticky=on layer=above manage=off
 #yabai -m rule --add app="^Terminal$" sticky=on layer=above manage=off
