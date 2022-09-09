@@ -84,20 +84,20 @@ hyper - t : killall Terminal
 hyper - e : yabai -m window --toggle split
 
 # focus window
-hyper - h : yabai -m window --focus west
-#hyper - j : yabai -m window --focus south
-#hyper - k : yabai -m window --focus north
-hyper - l : yabai -m window --focus east
+cmd - h : yabai -m window --focus west
+cmd - j : yabai -m window --focus south
+cmd - k : yabai -m window --focus north
+cmd - l : yabai -m window --focus east
 
 # focus
 hyper - 0x21 : yabai -m window --focus prev #[
 hyper - 0x1E : yabai -m window --focus next #]
 
 # swap managed window
-cmd - h : yabai -m window --swap west
-cmd - j : yabai -m window --swap south
-cmd - k : yabai -m window --swap north
-cmd - l : yabai -m window --swap east
+hyper - h : yabai -m window --swap west
+hyper - j : yabai -m window --swap south
+hyper - k : yabai -m window --swap north
+hyper - l : yabai -m window --swap east
 
 # balance size of windows
 hyper - 0 : yabai -m space --balance
